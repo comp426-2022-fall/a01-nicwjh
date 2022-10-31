@@ -5,7 +5,6 @@ const http = require("http");
 var fs = require("fs");
 
 // Require minimist module (make sure you install this one via npm).
-import minimist from 'minimist';
 var minimist = require('minimist');
 
 // Use minimist to process one argument `--port=` on the command line after `node server.js`.
