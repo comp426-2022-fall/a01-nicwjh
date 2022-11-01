@@ -43,7 +43,7 @@ const server = http.createServer((req,res)=>{
 console.log("create server called");
 res.writeHead(200);
 res.setHeader('Content-Type','text/html');
-res.end(req, 'utf-8');
+res.end('./public/index.html', 'utf-8');
 }).listen(port);
 
 console.log('Server listening on port ${port}');
