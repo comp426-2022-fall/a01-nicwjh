@@ -44,10 +44,10 @@ const server = http.createServer((req,res)=>{
 console.log("create server called");
 res.writeHead(200);
 res.setHeader('Content-Type','text/html');
-res.end("hello world");
+res.end();
 }).listen(port);
 
-console.log(`Server listening on port ${port}`);
+console.log('Server listening on port ${port}');
 
 
 // Start the `server` const listening on the port defined by argument in your `port` const. 
