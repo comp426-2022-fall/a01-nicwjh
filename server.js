@@ -26,7 +26,7 @@ if (err){
 console.error(err);
 return;
 }
-//console.log(data);
+console.log(data);
 });
 
 // If there is an error, put it on the console error and return. 
@@ -44,7 +44,7 @@ const server = http.createServer((req,res)=>{
 console.log("create server called");
 res.writeHead(200);
 res.setHeader('Content-Type','text/html');
-res.end(req);
+res.end("hello world");
 }).listen(port);
 
 console.log(`Server listening on port ${port}`);
