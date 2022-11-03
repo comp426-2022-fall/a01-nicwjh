@@ -40,14 +40,14 @@ console.log(data);
 // 3. end with the data that you are reading in from ./public/index.html.
 
 const server = http.createServer((req,res)=>{
-console.log("create server called");
 res.writeHead(200);
 res.setHeader('Content-Type','text/html');
 res.end('./public/index.html', 'utf-8');
-}).listen(port);
+});
 
+server.listen(port, () => { 
 console.log('Server listening on port ${port}');
-
+});
 
 // Start the `server` const listening on the port defined by argument in your `port` const. 
 // Put the exact message `Server listening on port ${port}` on the console log. 
