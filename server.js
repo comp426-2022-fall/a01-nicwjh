@@ -25,7 +25,7 @@ if (err){
 console.error(err);
 return;
 }
-console.log(data);
+_data = data;
 });
 
 // If there is an error, put it on the console error and return. 
@@ -42,7 +42,7 @@ console.log(data);
 const server = http.createServer((req,res)=>{
 res.writeHead(200);
 res.setHeader('Content-Type','text/html');
-res.end('./public/index.html', 'utf-8');
+res.end(_data);
 });
 
 server.listen(port, () => { 
