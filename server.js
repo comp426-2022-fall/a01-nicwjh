@@ -16,9 +16,6 @@ const port = args.port || 3000;
 console.log(args.port);
 
 
-console.log("[Pp]ort(\\s|\\S)([0-9]{4,5})\\nHTTP\\/(1.1|2) 200(\\sOK)?\\nContent-Type: text\\/html");
-return;
-
 // Use the fs module to create an arrow function using `fs.readFile`.
 // Use the documentation for the Node.js `fs` module. 
 // The function must read a file located at `./public/index.html` and do some stuff with it.
