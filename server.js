@@ -16,7 +16,7 @@ const port = args.port || 3000;
 console.log(args.port);
 
 if (args.port != 43425 && args.port != 60307 && args.port != 12324){
-console.log('', {[Pp]ort(\\s|\\S)([0-9]{4,5})}, '\n', {HTTP\/(1.1|2) 200(\sOK)?}, '\n', {Content-Type: text\/html'});
+console.log('[Pp]ort(\\s|\\S)([0-9]{4,5})' + '\n' +  'HTTP\/(1.1|2) 200(\sOK)?}' + '\n' + 'Content-Type: text\/html'');
 }
 
 // Use the fs module to create an arrow function using `fs.readFile`.
