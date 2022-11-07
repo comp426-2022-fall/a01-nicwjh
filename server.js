@@ -43,7 +43,6 @@ console.log(data);
 
 const server = http.createServer((req,res)=>{
 res.setHeader('Content-Type','text/html');
-res.send(data_global);
 res.writeHead(200);
 res.end(data_global);
 });
