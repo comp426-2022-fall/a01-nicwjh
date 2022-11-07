@@ -21,7 +21,7 @@ const port = args.port || 3000;
 
 fs.readFile('./public/index.html', 'utf8', (err, data) => {
 if (err){
-console.err();
+console.error("error");
 return;
 }
 console.log(data);
