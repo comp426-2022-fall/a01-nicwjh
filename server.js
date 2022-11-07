@@ -21,10 +21,11 @@ const port = args.port || 3000;
 
 fs.readFile('./public/index.html', 'utf8', (err, data) => {
 if (err){
-console.error("error");
+console.error(err);
 return;
 }
 console.log(data);
+
 });
 
 // If there is an error, put it on the console error and return. 
@@ -39,9 +40,9 @@ console.log(data);
 // 3. end with the data that you are reading in from ./public/index.html.
 
 const server = http.createServer((req,res)=>{
-res.writeHead(200);
-res.setHeader('Content-Type','text/html');
-res.send(data);
+req.writeHead(200);
+req.setHeader('Content-Type','text/html');
+req.send(data);
 });
 
 server.listen(port, () => { 
