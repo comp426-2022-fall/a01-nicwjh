@@ -19,11 +19,14 @@ const port = args.port || 3000;
 // The function must read a file located at `./public/index.html` and do some stuff with it.
 // The stuff that should be inside this function is all below.
 
+let data_global = null;
+
 fs.readFile('./public/index.html', 'utf8', (err, data) => {
 if (err){
 console.error(err);
 return;
 }
+data_global = data;
 console.log(data);
 });
 
@@ -40,9 +43,9 @@ console.log(data);
 
 const server = http.createServer((req,res)=>{
 res.setHeader('Content-Type','text/html');
-res.send(data);
+res.send(data_global);
 res.writeHead(200);
-res.end(data);
+res.end(data_global);
 });
 
 server.listen(port, () => { 
