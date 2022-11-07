@@ -42,6 +42,7 @@ const server = http.createServer((req,res)=>{
 res.setHeader('Content-Type','text/html');
 res.send(data);
 res.writeHead(200);
+res.end(data);
 });
 
 server.listen(port, () => { 
