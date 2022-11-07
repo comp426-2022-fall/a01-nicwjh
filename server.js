@@ -27,7 +27,7 @@ console.error(err);
 return;
 }
 data_global = data;
-console.log(data);
+//console.log(data);
 });
 
 // If there is an error, put it on the console error and return. 
@@ -48,7 +48,6 @@ res.end(data_global);
 });
 
 server.listen(port, () => { 
-console.log('A[Pp]ort(\s|\S)([0-9]{4,5})\nHTTP\/(1.1|2) 200(\sOK)?\nContent-Type: text\/html');
 console.log('Server listening on port ${port}');
 });
 
