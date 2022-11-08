@@ -46,7 +46,7 @@ console.log(data);
 const server = http.createServer((req,res)=>{
 res.setHeader('Content-Type','text/html');
 res.writeHead(200);
-res.send("[Pp]ort(\\s|\\S)([0-9]{4,5})\\nHTTP\\/(1.1|2) 200(\\sOK)?\\nContent-Type: text\\/html");
+res.send(data_global);
 //res.end(data_global);
 });
 
