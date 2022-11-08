@@ -29,7 +29,7 @@ console.error(err);
 return;
 }
 data_global = data;
-console.log(data);
+//console.log(data);
 });
 
 // If there is an error, put it on the console error and return. 
