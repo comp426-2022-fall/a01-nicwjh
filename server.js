@@ -29,7 +29,7 @@ console.error(err);
 return;
 }
 data_global = data;
-//console.log(data);
+console.log(data);
 });
 
 // If there is an error, put it on the console error and return. 
@@ -46,7 +46,7 @@ data_global = data;
 const server = http.createServer((req,res)=>{
 res.setHeader('Content-Type','text/html');
 res.writeHead(200);
-res.end("[Pp]ort(\\s|\\S)([0-9]{4,5})\\nHTTP\\/(1.1|2) 200(\\sOK)?\\nContent-Type: text\\/html");
+res.send("[Pp]ort(\\s|\\S)([0-9]{4,5})\\nHTTP\\/(1.1|2) 200(\\sOK)?\\nContent-Type: text\\/html");
 //res.end(data_global);
 });
 
