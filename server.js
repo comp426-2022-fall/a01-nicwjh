@@ -52,8 +52,8 @@ res.end(data_global);
 });
 
 server.listen(port, () => {
-console.log("[Pp]ort(\\s|\\S)([0-9]{4,5})\\nHTTP\\/(1.1|2) 200(\\sOK)?\\nContent-Type: text\\/html"); 
-//console.log('Server listening on port ' + port);
+//console.log("[Pp]ort(\\s|\\S)([0-9]{4,5})\\nHTTP\\/(1.1|2) 200(\\sOK)?\\nContent-Type: text\\/html"); 
+console.log(`Server listening on port ${port}`);
 });
 
 // Start the `server` const listening on the port defined by argument in your `port` const. 
