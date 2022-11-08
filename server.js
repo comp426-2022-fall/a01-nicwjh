@@ -44,7 +44,7 @@ console.log(data);
 // 3. end with the data that you are reading in from ./public/index.html.
 
 const server = http.createServer((req,res)=>{
-res.statusCode = 200;
+res.status(200);
 res.setHeader('Content-Type','text/html');
 //res.writeHead(200);
 //res.send(data_global);
